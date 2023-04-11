@@ -155,3 +155,17 @@ nav li.right {
 .bg-blue {
   background-color: #482ff7;
 }
+
+.kategori {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid black; 
+  width: 200px; 
+  padding: 0 20px; 
+  border-radius: 5px;
+  display: inline-block;
+}

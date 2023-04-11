@@ -20,7 +20,7 @@ $saldo_kategori = mysqli_fetch_assoc(mysqli_query($koneksi, "SELECT (
 SUM(CASE tipe_transaksi WHEN 'PEMASUKAN' THEN saldo ELSE 0 END) -
 SUM(CASE tipe_transaksi WHEN 'PENGELUARAN' THEN saldo ELSE 0 END)
 ) as saldo
- FROM transaksi WHERE id_kategori = '$id_kategori'"));
+ FROM transaksi WHERE id_kategori = '$id_kategori' AND id_user = '$id_user'"));
 
 ?>
 
